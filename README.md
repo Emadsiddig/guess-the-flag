@@ -1,51 +1,71 @@
-# Postgres Quiz App
+# 🌍 Guess The Flag
 
-A small Node.js/Express quiz application that reads quiz questions from a PostgreSQL database and renders them with EJS.
+A simple web game that challenges players to identify countries by their flags. The game displays a random flag, and the player must guess the correct country name to earn points.
 
 ## Features
 
-- Express server with EJS rendering
-- PostgreSQL connection using `pg`
-- Environment-based database configuration with `.env`
-- Static files served from `public/`
-- Quiz validation and scoring
+- Random flag generation
+- Country name guessing
+- Score tracking
+- Instant feedback on answers
+- Simple and responsive interface
 
-## Project structure
+## Technologies Used
 
-- `index.js` — main application entry point
-- `package.json` — project dependencies and metadata
-- `.env` — local configuration (not committed)
-- `.gitignore` — excludes `node_modules` and `.env`
-- `views/index.ejs` — page template
-- `public/` — static assets
-- `flags.csv` — quiz data source (if needed)
+- HTML
+- CSS
+- JavaScript
+- REST Countries API
 
-## Setup
+## Installation
 
-1. Install dependencies:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Emadsiddig/guess-the-flag.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd guess-the-flag
+```
+
+3. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Create a `.env` file in this directory with values like:
+4. Create a `.env` file in the project root and add:
 
 ```env
-DB_USER=postgres
-DB_PASSWORD=Print1482@
-DB_HOST=localhost
-DB_NAME=world
-DB_PORT=5432
-PORT=3000
+ACCESS_KEY=your_api_key_here
 ```
 
-3. Make sure PostgreSQL is running and the `world` database contains the `flags` table.
-
-4. Start the server:
+5. Start the application:
 
 ```bash
-node index.js
+npm start
 ```
+
+6. Open your browser and visit:
+
+```text
+http://localhost:3000
+```
+
+## How to Play
+
+1. A flag will be displayed on the screen.
+2. Enter the country name in the input field.
+3. Submit your answer.
+4. If the answer is correct, your score increases and a new flag appears.
+5. Keep playing to improve your score.
+
+## Author
+
+Created by **Emad Siddig**.
 
 5. Open the app in your browser:
 
