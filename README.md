@@ -53,18 +53,3 @@ node index.js
 http://localhost:3000
 ```
 
-## Notes
-
-- `.env` is included in `.gitignore` so sensitive credentials are not pushed to GitHub.
-- If you want to use CSV data instead of PostgreSQL, you can replace the DB query logic with a CSV loader.
-
-## Troubleshooting
-
-- If the app cannot connect to the database, verify your `.env` values and that PostgreSQL is running.
-- If `currentQuestion` is empty, ensure the query returns rows from the `flags` table.
-
-## Recommended GitHub readiness
-
-- Keep `.env` secret and do not commit it.
-- Commit `package.json`, `package-lock.json`, `index.js`, `README.md`, `views/`, and `public/`.
-- Use the provided `.gitignore`.
